@@ -45,7 +45,7 @@ In this example, I'm going to use the following details:
 Just let the magic process for 1 minute or 2.
 
 ### The table that will be fetched
-Once your database is ready, use the button on the left side bar: ![supabase-SQL](/assets/img/2021-08-26/supabase-SQL.png) to run the following SQL query. It will create the table you will retrieve datas from later on.
+Once your database is ready, use the button on the left side bar: ![supabase-SQL](/assets/img/2021-08-26/supabase-sql.png) to run the following SQL query. It will create the table you will retrieve datas from later on.
 {% highlight SQL %}
 CREATE TABLE public.conv
 (
