@@ -12,7 +12,7 @@ Connecting postgreSQL to Google Sheets might be tricky, as there is no explicit 
 As a developer, I'd rather create my own things, and share them with people who might need them for their own projects. Let's see how it goes.
 
 # Why doing this?
-The main goal is to retrieve datas from a place to another : basically for **better monitoring**. As you may know, Google Sheets is available from Desktop and mobile, and it's free to use. You will see some Script on Google that will empower your app easily. You can also connect your sheets to Tableau Public for some magical Data Viz, and refresh datas daily without any effort from you. You can find how to do so [here](#soon).
+The main goal is to retrieve datas from a place to another : basically for **better monitoring**. As you may know, Google Sheets is available from Desktop and mobile, and it's free to use. You will see some scripts on Google Appscripts that will empower your app easily. You can also connect your sheets to Tableau Public for some magical Data Viz, and refresh datas daily without any effort from you. You can find how to do so [here](#soon).
 
 
 
