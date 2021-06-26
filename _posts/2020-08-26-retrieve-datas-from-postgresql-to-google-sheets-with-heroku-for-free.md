@@ -121,7 +121,7 @@ In your root directory (`python-server` in our example), copy and paste the :
 
 #### **requirements.txt**
 The code is [here](https://raw.githubusercontent.com/jadynekena/python-server-heroku/main/requirements.txt).  
-It's telling you (and Heroku when before deployment) the useful dependancies for your project.
+It's telling you (and Heroku right before deployment) the useful dependancies for your project.
 
 #### **Procfile**
 The code is [here](https://raw.githubusercontent.com/jadynekena/python-server-heroku/main/Procfile).  
