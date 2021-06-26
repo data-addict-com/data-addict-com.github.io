@@ -45,7 +45,7 @@ In this example, I'm going to use the following details:
 Just let the magic process for 1 minute or 2.
 
 ### The table that will be fetched
-Once your database is ready, use the button on the left side bar: ![supabase-SQL](/assets/img/supabase-SQL.png) to run the following SQL query. It will create the table you will retrieve datas from later on.
+Once your database is ready, use the button on the left side bar: ![supabase-SQL](/assets/img/2021-08-26/supabase-SQL.png) to run the following SQL query. It will create the table you will retrieve datas from later on.
 {% highlight SQL %}
 CREATE TABLE public.conv
 (
@@ -85,14 +85,14 @@ a3ce9c80-8333-4fc7-8d27-7c19c31326d4	A	B	Foo. The Foo Bar.	2021-06-26 12:05:45+0
 {% endhighlight %}
 
 Your supabase table must now look like this:  
-![final-supabase-datas](/assets/img/final-datas.png)
+![final-supabase-datas](/assets/img/2021-08-26/final-datas.PNG)
 
 ## 3. Create your python server hosted in Github and deployed on Heroku
 ### The connection string
 Your database connection string should look like this: `postgres(ql)://user:password@your-host-location.com:portnumber/dbname`.
 
 If you created a database from Supabase, you can find it in Settings > Database > Connection string. The actual connection string will look like this:
-![connection-string-preview](/assets/img/connection-string-postgres.png)
+![connection-string-preview](/assets/img/2021-08-26/connection-string-postgres.png)
 
 Now that you have this connection string, let's code!
 
@@ -113,7 +113,7 @@ The code is [here](https://raw.githubusercontent.com/jadynekena/python-server-he
 #### **cert.pem and key.pem**
 Those 2 files are auto-generated, generally from openssl in terminal, or an easier solution like this [website that provides self-signed certificates](https://8gwifi.org/SelfSignCertificateFunctions.jsp).
 Once you provide the Common Name, you can generate both files and have some kind of texts like this:
-![cert-key-generated](/assets/img/cert-key-generated.PNG)
+![cert-key-generated](/assets/img/2021-08-26/cert-key-generated.PNG)
 
 In your root directory (`python-server` in our example), copy and paste the :
 - Certificate in a file named `cert.pem` 
@@ -136,7 +136,7 @@ https://127.0.0.1:5000/<YOUR-DB-HOST>/<YOUR-SELECT-STATEMENT>
 {% endhighlight %}  
 
 In my case, I have this JSON:
-![results](/assets/img/returned-datas-from-localhost-json.PNG)
+![results](/assets/img/2021-08-26/returned-datas-from-localhost-json.PNG)
 
 Now, push all those files in your forked and **private** repo on github.  
 Once you're done, go to your Heroku account, we're going to create your app.
@@ -248,16 +248,16 @@ You will need to change `URL_OF_THE_SPREADSHEET` and `URL_OF_HEROKU_APP` from th
 
 
 Click on `go` function from the dropdown menu:
-![dropdown-functions-google-appscript](/assets/img/go-function.PNG)
+![dropdown-functions-google-appscript](/assets/img/2021-08-26/go-function.PNG)
 Run it.  
 Accept all authorizations.  
 Go back to your spreadsheet tab, and see the magic!
-![the-magic](/assets/img/final-results.PNG)
+![the-magic](/assets/img/2021-08-26/final-results.PNG)
 
 ### (Optional) Enable a trigger to retrieve datas automatically
 Instead of running the `go` function manually, you can setup a trigger.
 Go on the left-side pannel > Triggers. Then configure the parameters as follows, if you want a per-minute refresh for instance:
-![triggers-parameters](/assets/img/trigger-parameters.PNG)
+![triggers-parameters](/assets/img/2021-08-26/trigger-parameters.PNG)
  
 And that's it ! Enjoy your datas from Google Sheets directly.
 
