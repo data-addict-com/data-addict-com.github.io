@@ -23,12 +23,6 @@ author:
   avatar: /assets/img/avatar.jpg # change with your own avatar
   linkedin: data-analyst-vba
 
-# Select which social network share links to show in posts
-share-links-active:
-  twitter: true
-  facebook: true
-  linkedin: true
-
 # URL settings
 url: "https://data-addict.com"
 baseurl: 
