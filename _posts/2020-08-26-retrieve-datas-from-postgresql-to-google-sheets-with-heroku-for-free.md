@@ -104,7 +104,8 @@ Our goal here is to create the controller that receives a SQL statement (such as
 **Important cautions**:
 - The following method is **not** secure. You will write down your postgreSQL database password inside your code, so be sure to host the file in a **private repo** on github.
 - If your datas are sensitive, you should consider implementing some authentication layer before accessing to your Heroku app.  
-Create a local directory, named `python-server` for example. From now on, you will need to create **5 files**. **2 of those 5 files will be auto-generated**, you will read more about it later, just right [here](#certpem-and-keypem)
+
+Now create a local directory, named `python-server` for example. From now on, you will need to create **5 files**. **2 of those 5 files will be auto-generated**, you will read more about it later, just right [here](#certpem-and-keypem)
 
 #### **app.py**
 The code is [here](https://raw.githubusercontent.com/jadynekena/python-server-heroku/main/app.py).
