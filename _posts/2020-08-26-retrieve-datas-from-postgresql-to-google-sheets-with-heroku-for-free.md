@@ -111,7 +111,7 @@ Now create a local directory, named `python-server` for example. From now on, yo
 The code is [here](https://raw.githubusercontent.com/jadynekena/python-server-heroku/main/app.py).
 
 #### **cert.pem and key.pem**
-Those 2 files are auto-generated, generally from openssl in terminal, or an easier solution from this [website that provides self-signed certificates](https://8gwifi.org/SelfSignCertificateFunctions.jsp).
+Those 2 files are auto-generated, generally from openssl in terminal, or an easier solution like this [website that provides self-signed certificates](https://8gwifi.org/SelfSignCertificateFunctions.jsp).
 Once you provide the Common Name, you can generate both files and have some kind of texts like this:
 ![cert-key-generated](/assets/img/cert-key-generated.PNG)
 
