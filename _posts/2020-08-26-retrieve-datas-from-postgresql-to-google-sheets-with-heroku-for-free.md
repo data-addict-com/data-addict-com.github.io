@@ -89,7 +89,11 @@ Your supabase table must now look like this:
 ![final-supabase-datas](/assets/img/final-datas.png)
 
 ## 3. Create your python server hosted in Github and deployed on Heroku
-### The python server
+### Option 1: fork the project
+Directly from the [github project]().
+
+### Option2: create your own repo and your own files
+#### The python server
 Our goal here is to create the controller that receives a SQL statement (such as `SELECT * FROM NAMETABLE`), and gives back the datas as JSON. It's actually a REST API controller.
 
 **Important cautions**:
@@ -132,9 +136,9 @@ I promise we're almost done!
 Now push all those files in a private repo on github.
 Once you're done, go to your Heroku account, we're going to create your app.
 
-### The Heroku project
+## 4. The Heroku project
 
-## 4. Fetch datas into Google Sheets
+## 5. Fetch datas into Google Sheets
  
 
 # Drawbacks
