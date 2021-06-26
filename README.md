@@ -7,7 +7,7 @@ I'm a data engineer and I actually don't build websites. All the front end eleme
 
 # How to use this repo
 The template I mentionned before might help you, but here are some tips:  
-- `_config.yml` : for the main configuration of your website. Please refer to the [official jekyll documentation](https://jekyllrb.com/docs/configuration/options/).
+- `_config.yml` : for the main configuration of your website. You can see the [beautiful-jekyll config](https://github.com/daattali/beautiful-jekyll/blob/master/_config.yml) to understand how to fill it with your own datas.
 - `_posts` : where your articles will be stored, with a specific filename to make the datetimes work.  
 - `assets` : for images, css style, and favicons.  
 - `_sass/main.scss` : for generic parameters such as colors, font-family, size of few elements, etc.  
