@@ -58,7 +58,7 @@ layout: compress
 
             </span>
             <div>
-            {% include read_time.html %}
+            {% include read_time.html %}            
             <div>
             <time hidden datetime="{{ page.modified | date_to_xmlschema }}" itemprop="dateModified">
               {{ page.date | date: "%b %d, %Y" }}
@@ -79,7 +79,8 @@ layout: compress
           {% endif %}
         </div>
       </article>
-    
+      
+      {% include share.html %}
       {% if page.comments %}
         {% include comments.html %}
       {% endif %}
