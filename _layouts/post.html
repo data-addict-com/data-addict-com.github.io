@@ -53,7 +53,13 @@ layout: compress
             </time>
             <span itemprop="author" itemscope itemtype="https://schema.org/Person">
               <span itemprop="name">{{ site.author.name }}</span>
+
+              
+
             </span>
+            <div>
+            {% include read_time.html %}
+            <div>
             <time hidden datetime="{{ page.modified | date_to_xmlschema }}" itemprop="dateModified">
               {{ page.date | date: "%b %d, %Y" }}
             </time>
