@@ -21,6 +21,13 @@ author:
   facebook: # facebook username
   email: contact@data-addict.com # email adress
   avatar: /assets/img/avatar.jpg # change with your own avatar
+  linkedin: data-analyst-vba
+
+# Select which social network share links to show in posts
+share-links-active:
+  twitter: true
+  facebook: true
+  linkedin: true
 
 # URL settings
 url: "https://data-addict.com"
@@ -47,6 +54,7 @@ defaults:
     values:
       layout: post
       comments: true
+      social-share: true # add social media sharing buttons to all blog posts
 
 # Jekyll Compose default front matter
 jekyll_compose:
