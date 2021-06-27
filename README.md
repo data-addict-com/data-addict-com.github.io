@@ -19,3 +19,6 @@ Then go to: **http://127.0.0.1:4000**
 
 # Credits
 I'm a data engineer and I actually don't build websites. All the front end elements here are from [jekyll-klise](https://github.com/piharpi/jekyll-klise).
+
+# Maintainer
+This repo is owned by [@Jady Nekena](https://github.com/jadynekena)
