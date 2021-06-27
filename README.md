@@ -1,6 +1,6 @@
 # Welcome to Data Addict repo.
 Hey, thanks for visiting this repo!
-It's basically my website content, that you definitely can clone to make it your own blogging CMS.
+It's basically my website content, that you definitely can clone/fork/use as a template to make it your own blogging CMS.
 
 # How to use this repo
 The template I mentionned before might help you, but here are some tips:  
