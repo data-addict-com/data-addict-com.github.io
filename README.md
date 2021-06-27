@@ -13,3 +13,9 @@ The template I mentionned before might help you, but here are some tips:
 - `_sass/main.scss` : for generic parameters such as colors, font-family, size of few elements, etc.  
 - `_includes` : for the templates that will be used to render your website : navbar, posts contents, and even comments section.  
 
+# Run it locally
+```
+bundle install
+bundle exec jekyll serve --incremental --trace
+```
+Then go to: **http://127.0.0.1:4000**
