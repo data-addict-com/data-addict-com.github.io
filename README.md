@@ -5,7 +5,7 @@ This website is live on [data-addict.com](https://data-addict.com).
 It's basically my website content, that you definitely can clone/[fork](https://github.com/jadynekena/jadynekena.github.io/fork)/[use as a template](https://github.com/jadynekena/jadynekena.github.io/generate) to make it your own blogging CMS.
 
 # How to use this repo
-The template I mentionned before might help you, but here are some tips:  
+Here are some tips to get started :  
 - `_config.yml` : for the main configuration of your website. You can see the [beautiful-jekyll config](https://github.com/daattali/beautiful-jekyll/blob/master/_config.yml) to understand how to fill it with your own datas.
 - `_posts` : where your articles will be stored, with a specific filename to make the datetimes work.  
 - `assets` : for images, css style, and favicons.  
