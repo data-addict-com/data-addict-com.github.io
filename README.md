@@ -1,5 +1,7 @@
-# Welcome to Data Addict repo.
-Hey, thanks for visiting this repo!
+# Welcome to Data Addict repo
+Hey, thanks for visiting this repo!  
+This website is live on [data-addict.com](https://data-addict.com).  
+
 It's basically my website content, that you definitely can clone/[fork](https://github.com/jadynekena/jadynekena.github.io/fork)/[use as a template](https://github.com/jadynekena/jadynekena.github.io/generate) to make it your own blogging CMS.
 
 # How to use this repo
