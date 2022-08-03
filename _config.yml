@@ -17,14 +17,14 @@ author:
       This website is hold by Jady Nekena R.
   username: jadynekena # general username
   github: jadynekena # github username
-  twitter: jadynekena # twitter username
+  twitter: jadyrama # twitter username
   facebook: # facebook username
-  email: contact@data-addict.com # email adress
+  email: contact@jadynekena.com # email adress
   avatar: /assets/img/avatar.jpg # change with your own avatar
   linkedin: data-analyst-vba
 
 # URL settings
-url: "https://data-addict.com"
+url: "https://data-addict.jadynekena.com"
 baseurl: 
 permalink: /:title/
 google_analytics: G-1QPQQ0J86T # leave it blank if not wish
