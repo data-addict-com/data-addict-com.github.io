@@ -11,10 +11,9 @@ mode: dark # default theme "dark" | "light"
 
 # Profile settings
 author:
-  name: Data Addict # author name
+  name: Data Addict by Jady Nekena R. # author name
   bio: >- # tell to the world
-      Let's talk about Datas, Programming and Freelancer life.
-      This website is hold by Jady Nekena R.
+      Let's talk about Datas, Programming and Dev Freelancer life.
   username: jadynekena # general username
   github: jadynekena # github username
   twitter: jadyrama # twitter username
@@ -63,7 +62,7 @@ jekyll_compose:
     description:
 
 # Homepage limit posts
-number_of_posts: 5
+number_of_posts: 10
 
 # Build settings
 # theme: klise
