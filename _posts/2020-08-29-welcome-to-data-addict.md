@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Welcome to Data Addict!"
-date:   2021-06-26 12:29:20 +0700
+date:   2020-08-29 00:00:00 +0200
 categories: data addict about
 published: false
 ---

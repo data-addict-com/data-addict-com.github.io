@@ -1,18 +1,20 @@
 ---
 layout: post
 title:  "Retrieve datas from postgreSQL to Google Sheets with Heroku for free"
-date:   2021-06-26 12:29:20 +0700
+date:   2020-08-26 00:00:00 +0200
 categories: datas postgresql google-sheets heroku python
 published: true
 ---
 
+* TOC
+{:toc}
 
 # Motivation
 Connecting postgreSQL to Google Sheets might be tricky, as there is no explicit solution to do so, unless you use third party tools such as Zapier, Kloud.io or Blend.co. Moreover, some of those solutions are not forever free.  
 As a developer, I'd rather create my own things, and share them with people who might need them for their own projects. Let's see how it goes.
 
 # Why doing this?
-The main goal is to retrieve datas from a place to another : basically for **better monitoring**. As you may know, Google Sheets is available from Desktop and mobile, and it's free to use. You will see some scripts on Google Appscripts that will empower your app easily. You can also connect your sheets to Tableau Public for some magical Data Viz, and refresh datas daily without any effort from you. You can find how to do so [here](#soon).
+The main goal is to retrieve datas from a place to another : basically for **better monitoring**. As you may know, Google Sheets is available from Desktop and mobile, and it's free to use. You will see some scripts on Google Appscripts that will empower your app easily. You can also connect your sheets to Tableau Public for some magical Data Viz, and refresh datas daily without any effort from you.
 
 # Some assumptions before we begin
 The following code is assuming that you're using the same dbname-username-password for all the databases that you want to monitor. Of course, if this assumption is not true, you should write down a new way to handle all dbnames-users-passwords, by changing the variables `DB_NAME`, `DB_USERNAME` and `DB_PASSWORD`.
@@ -248,7 +250,7 @@ You will need to change `URL_OF_THE_SPREADSHEET` and `URL_OF_HEROKU_APP` from th
 
 
 Click on `go` function from the dropdown menu:
-![dropdown-functions-google-appscript](/assets/img/2021-08-26/go-function.PNG)
+![dropdown-functions-google-appscript](/assets/img/2021-08-26/go-function.PNG)   
 Run it.  
 Accept all authorizations.  
 Go back to your spreadsheet tab, and see the magic!

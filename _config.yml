@@ -40,7 +40,8 @@ markdown: kramdown
 highlighter: rouge
 kramdown:
   syntax_highlighter: rouge
-
+  parse_block_html: true
+  
 # Default front matter
 defaults:
   - scope:
