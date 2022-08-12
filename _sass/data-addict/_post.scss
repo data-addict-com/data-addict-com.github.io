@@ -135,6 +135,13 @@
     }
   }
 
+  // no additional margin left when it's toc list
+  #markdown-toc, #markdown-toc li::before {
+    content: '';
+    margin-left: 0;
+    width: auto;
+  }
+
   dl dt {
     font-weight: $bold-weight;
   }
