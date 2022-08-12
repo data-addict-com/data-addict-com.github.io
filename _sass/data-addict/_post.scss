@@ -87,11 +87,19 @@
     }
   }
 
+  summary {
+    cursor: pointer;    
+  }
+
+  summary:hover {
+    border-bottom: 1px solid;
+  }
+
   a {
     color: $text-link-blue;
     text-decoration: none;
     &[target="_blank"]::after {
-      content: " \2197";
+      content: url("data:image/svg+xml,%3Csvg width='10' height='10' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9' class='icon_svg-stroke' stroke='%23666' stroke-width='1.5' fill='none' fill-rule='evenodd' stroke-linecap='round' stroke-linejoin='round'%3E%3C/path%3E%3C/svg%3E");
       font-size: $small-font-size;
       line-height: 0;
       position: relative;
