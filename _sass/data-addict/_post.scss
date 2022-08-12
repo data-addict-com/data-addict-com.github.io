@@ -52,9 +52,8 @@
     margin-right: 1.5em;
 
     &::after {
-      background: $light;
-      bottom: 1px;
-      content: " ";
+      color: #ececec;
+      content: " | ";
       height: 2px;
       position: absolute;
       right: -20px;
