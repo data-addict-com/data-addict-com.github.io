@@ -63,13 +63,18 @@ There are many **reasons to choose Gitlab as a solution**, here are **5 of them*
 	+ Set up a **same workflow for multiple projects**, by storing in a whole different repo ;
 	+ **Preview app** before deployment to reduce side effects ;
 	+ Run a **single job from pipeline manually** to monitor your workflow.
-- (3) **<u>todo</u>** : todo
-- (4) **<u>High Availability</u>** : the servers availability increases as the number of users is rising. They explained how it works in [their official website](https://docs.gitlab.com/ee/administration/reference_architectures/){:target="_blank"}.
-- (5) **<u>Hostable</u>** : a company [can host its own gitlab platform](https://about.gitlab.com/solutions/open-source/){:target="_blank"}, so that only **users@company.com** can have access to the **gitlab.company.com**.
+- (3) **<u>Industry compliancy</u>** : Gitlab has more features that makes it way more efficient than Github.
+
+![Gitlab VS Github in Industry standards](../assets/img/2022-08-13/gitlab-vs-github.png)
+> Source: [Gitlab VS Github in Industry standards](https://about.gitlab.com/why-gitlab/#chart){:target="_blank"}
+
+- (4) **<u>Hostable</u>** : you [can host your own gitlab platform](https://about.gitlab.com/solutions/open-source/){:target="_blank"}, using your own policies. For example, only users with **...@company.com** mail address can have access to **gitlab.company.com**.
+- (5) **<u>High Availability</u>** : the servers availability increases as the number of users is rising. They explained how it works in [their official website](https://docs.gitlab.com/ee/administration/reference_architectures/){:target="_blank"}.
+
 
 # Final thoughts
-If you need to deploy a **reliable and customizable app** that is **not necessarily open-sourced**, choose Gitlab.   
-If you want to **deliver fast** with **all-ready solutions** and a **more active community**, choose Github. 
+If you need to deploy a **reliable and customizable app** that is **not necessarily open-sourced** with a lot of **[DevOps](https://en.wikipedia.org/wiki/DevOps){:target="_blank"}** processes, choose <u>Gitlab</u>.   
+If you want to **deliver fast** with **all-ready solutions** and an **active community**, especially in **open-source projects**, choose <u>Github</u>. 
 
 # They also compared each other !
 Both platforms actually released a very interesting comparison of each other. You can check out [Gitlab's one here](https://about.gitlab.com/devops-tools/github-vs-gitlab/){:target="_blank"} and [Github's one here](https://resources.github.com/devops/tools/compare/#compare-gitlab){:target="_blank"}.
