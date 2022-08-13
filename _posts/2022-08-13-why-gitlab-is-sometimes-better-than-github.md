@@ -6,6 +6,8 @@ categories: Gitlab Github comparison true
 published: true
 ---
 
+![Gitlab VS Github in Industry standards](../assets/img/2022-08-13/gitlab-vs-github.png)
+
 **Have you ever heard about Gitlab and Github and never knew what the differences are** ?   
 This article is going to compare them, and explain why Gitlab is (sometimes) better than Github.   
 If you don't want to read few explanations of keywords, [jump right into gitlab advantages](#why-you-should-choose-gitlab).
