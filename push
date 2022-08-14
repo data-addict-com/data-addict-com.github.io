@@ -1,0 +1,14 @@
+echo
+echo adding files...
+echo
+git add .
+echo
+echo commiting files...
+echo
+git commit -m "\"${1:-commit with default msg}\""
+echo
+echo pushing files...
+echo
+git push
+echo
+echo done !
