@@ -38,7 +38,3 @@ bash push "this is a commit -m message"
 {% endhighlight %}
 
 Simple and efficient !
-
-
-
-[baseimg]: ../assets/img/2022-08-14/
