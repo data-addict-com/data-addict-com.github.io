@@ -25,7 +25,7 @@ In a bash file `push` at the root directory, add the following script.
 {% endhighlight %}
 
 # Results
-And now are from this :
+And now we are from this :
 {% highlight bash %}
 git add .
 git commit -m "this is a commit message"
@@ -34,7 +34,7 @@ git push
 
 to this :
 {% highlight bash %}
-bash push "this is a commit -m message"
+bash push "this is a commit message"
 {% endhighlight %}
 
 Simple and efficient !
