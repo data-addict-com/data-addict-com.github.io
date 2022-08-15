@@ -36,4 +36,4 @@ Before serving your website, execute `bundle add webrick` and it will be fixed.
 I'm a data engineer and I actually don't build websites. All the front end elements here are from [jekyll-klise](https://github.com/piharpi/jekyll-klise).
 
 # Maintainer
-This repo is owned by [@Jady](https://twitter.com/jadyrama). 
+This repo is owned by [@Jady](https://twitter.com/jadyrama).
