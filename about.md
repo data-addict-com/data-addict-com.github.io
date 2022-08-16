@@ -2,7 +2,7 @@
 title: Who is behind Data Addict
 permalink: /about/
 layout: page
-excerpt: Hello everyone, I'm an engineer based and living in France, I'm originally from Madagascar. This blog is basically to talk about topics I love, like programming, entrepreneur life, and freelancing stuff. 
+excerpt: Who is behind Data Addict ?
 comments: true
 ---
 
