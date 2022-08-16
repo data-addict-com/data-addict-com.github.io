@@ -2,7 +2,8 @@
 layout: post
 title:  Understanding Sublime Text snippets for a better performance
 date:   2022-08-16 09-55-00 +0200
-categories: Sublime Text snippets tutorial easy
+categories: sublime text snippets tutorial easy
+tags: sublime text snippets tutorial easy
 published: false
 ---
 

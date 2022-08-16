@@ -2,7 +2,8 @@
 layout: post
 title:  How to create access token to push files to github or gitlab
 date:   2022-08-12 00:00:00 +0200
-categories: access token github gitlab repository
+categories: access-token github gitlab repository
+tags: access-token github gitlab repository
 published: true
 ---
 

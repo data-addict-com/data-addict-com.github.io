@@ -2,18 +2,20 @@
 title: Tags
 permalink: /tags/
 layout: page
-excerpt: Sorted article by tags.
+excerpt: All posts grouped by topics.
 ---
+
+{% assign sortedtags = site.tags | sort %}
 
 <div class="archive-tags">
   <a class="tag-item" href="#">all</a>
-  {%- for tag in site.tags -%} 
+  {%- for tag in sortedtags -%} 
     {% capture name %}{{ tag | first }}{% endcapture %}
     <a class="tag-item" href="#{{name}}">{{ name }}</a> 
   {%- endfor -%}
 </div>
 
-{%- for tag in site.tags -%}
+{%- for tag in sortedtags -%}
   {%- capture name -%}{{ tag | first }}{%- endcapture -%}
   <h2 id="{{ name }}">{{ name | upcase }}</h2>
   {%- for post in site.tags[name] -%}
@@ -24,4 +26,4 @@ excerpt: Sorted article by tags.
       </h3> 
     </article>
   {%- endfor -%}
-{%- endfor -%}
+{%- endfor -%} 

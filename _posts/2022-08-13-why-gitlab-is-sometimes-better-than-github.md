@@ -2,7 +2,8 @@
 layout: post
 title:  Why Gitlab is (sometimes) better than Github
 date:   2022-08-13 00-00-00 +0200
-categories: Gitlab Github comparison true
+categories: gitlab github comparison differences
+tags: gitlab github comparison differences
 published: true
 ---
 

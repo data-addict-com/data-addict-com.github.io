@@ -3,6 +3,7 @@ layout: post
 title:  "Pull datas from Supabase to Google Sheets"
 date:   2022-07-27 00:00:00 +0200
 categories: datas postgresql google-sheets supabase google-appscripts
+tags: datas postgresql google-sheets supabase google-appscripts
 published: true
 ---
 

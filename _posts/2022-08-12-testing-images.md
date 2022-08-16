@@ -3,6 +3,7 @@ layout: post
 title: New article test
 date:   2022-08-12 10-19-10 +0200
 categories: categ1 categ2
+tags: categ1 categ2
 published: false
 ---
 

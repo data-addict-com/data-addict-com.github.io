@@ -3,6 +3,7 @@ layout: post
 title:  How to setup gitlab pages domain and subdomain step by step
 date:   2022-08-15 00-00-00 +0200
 categories: gitlab pages subdomain tutorial namecheap
+tags: gitlab pages subdomain tutorial namecheap
 published: true
 ---
 

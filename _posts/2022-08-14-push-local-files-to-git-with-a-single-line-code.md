@@ -2,7 +2,8 @@
 layout: post
 title:  How to push local files to git with a single line code
 date:   2022-08-14 05-53-11 +0200
-categories: git github gitlab CLI opensource
+categories: git github gitlab cli opensource
+tags: git github gitlab cli opensource
 published: true
 ---
 

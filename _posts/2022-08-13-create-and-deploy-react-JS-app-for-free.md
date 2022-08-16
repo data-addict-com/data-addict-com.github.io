@@ -2,7 +2,8 @@
 layout: post
 title:  Create and deploy React JS app for free
 date:   2022-08-13 00-00-01 +0200
-categories: ReactJS Gitlab
+categories: reactJS gitlab
+tags: reactJS gitlab
 published: true
 ---
 
