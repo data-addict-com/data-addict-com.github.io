@@ -22,27 +22,39 @@ code {
 
 // Codeblock Theme
 pre.highlight, pre {
-  margin: 0 -27px;
   @include media-query($on-mobile) {
-    margin: 0 calc(51% - 51vw);
-    padding-left: 20px;
+    /*margin: 0 calc(51% - 51vw);*/
   }
   border: 1px solid rgba(128,128,128,0.1);
   background-color: #1a1b21;
-  border-radius: 2px;
-  padding: 10px;
+  border-radius: 15px;
   display: block;
   overflow-x: auto;
 
   > code {
-    width: 100%;
+    width: min-content;
     max-width: 50rem;
     margin-left: auto;
     margin-right: auto;
     line-height: 1.5;
     display: block;
     border: 0;
+    margin: 15px;
   }
+}
+
+pre:before {
+  display: block;
+  text-align: end;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  color: black;
+  content: " -  ⃞  X ";
+  font-weight: bold;
+  padding: 5px 0 ;
 }
 
 .highlight table td {
