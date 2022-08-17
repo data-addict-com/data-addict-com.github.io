@@ -30,7 +30,7 @@ This article will show you step by step how I did it. But before we're diving in
   
 <details markdown=block>
 <summary markdown=span><strong>Insights</strong></summary>
-- There are **a lot** of files without any extension (clear blue on the left-hand side).
+- There are **a lot** of files without any extension (light blue on the left-hand side).
 - The **ucas** files from Unreal Engine archives actually make sense, as I do play **Fortnite**.
 - The **vsix** files are some visual code extensions. I still wonder how they came into my computer, **I only use Sublime text as main editor**...
 - I didn't realize how big my **png photos** were until this chart showed it up.
