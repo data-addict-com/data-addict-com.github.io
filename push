@@ -1,3 +1,5 @@
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/gitlab3_id_ed25519
 echo
 echo adding files...
 echo
