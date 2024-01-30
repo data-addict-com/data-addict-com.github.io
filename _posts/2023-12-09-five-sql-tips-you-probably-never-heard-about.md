@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Four SQL tips you probably never heard about
+title:  Five SQL tips you probably never heard about
 date:   2023-12-09 10-46-20 +0200
 categories: sql data tricks  tips
 tags: sql data tricks  tips
@@ -192,10 +192,19 @@ ORDER BY "CONTINENT"
 And here are the results with the worldwide row :
 ![roll-up-results](../assets/img/2023-12-09/roll-up-results.png)
 
-The [next tip](#4-coalesce) will show you how to replace the empty (aka `null`) value of `CONTINENT` into 'WORLDWIDE'.
+The [next tip](#5-coalesce) will show you how to replace the empty (aka `null`) value of `CONTINENT` into 'WORLDWIDE'.
 
-## 4. `COALESCE`
-This tip is probably the most known among the four ones. But nevermind, some people may never heard about it !   
+## 4. `NULLS LAST`
+In the `ORDER BY` part, you can add this to display non null values first.
+```
+SELECT *
+FROM PEOPLE
+ORDER BY "CONTINENT" NULLS LAST
+```
+Anyone with a null value of `CONTINENT` will always be displayed at the end of your selected datas.
+
+## 5. `COALESCE`
+This tip is probably the most known among them all. But nevermind, some people may never heard about it !   
 To replace `null` values with an actual value, you can use `COALESCE(fieldname, 'replacement_value')`.   
 For example, let's take those datas :
 ![roll-up-results](../assets/img/2023-12-09/roll-up-results.png)
