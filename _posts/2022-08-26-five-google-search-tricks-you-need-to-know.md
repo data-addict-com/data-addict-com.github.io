@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  Five google search tricks you need to know
+description: When you search for information on Google, it is sometimes complicated to verify its veracity. (...) To avoid that, let me introduce you my **5 tricks to make better Google search results**.
 date:   2022-08-26 14-51-21 +0200
 categories: google search tricks  tips
 tags: google search tricks tips

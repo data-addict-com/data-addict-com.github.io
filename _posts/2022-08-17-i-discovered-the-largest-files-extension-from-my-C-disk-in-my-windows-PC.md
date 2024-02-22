@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  I discovered the largest files in my Windows C disk
+description: Have you ever wondered what are the largest files in your local disk ? Well, I also did. But at the same time, I had two constraints on mind 1) I didn't want to use any third party tool to process the disk scan 2) I was absolutely not going to scan it manually.
 date:   2022-08-17 08-14-02 +0200
 categories: tableau dataviz vizualisation disk windows os 
 tags: tableau dataviz vizualisation disk windows os 

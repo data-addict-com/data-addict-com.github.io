@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Pull datas from Supabase to Google Sheets"
+description: In this article, you will see how to pull datas from your supabase project using Supabase API to a Google Sheet. No matter how many fields and rows you want to pull, this should always work.
 date:   2022-07-27 00:00:00 +0200
 categories: datas postgresql google-sheets supabase google-appscripts
 tags: datas postgresql google-sheets supabase google-appscripts

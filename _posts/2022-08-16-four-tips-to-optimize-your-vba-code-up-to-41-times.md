@@ -1,10 +1,11 @@
 ---
-layout : post
-title :  Four tips to optimize your VBA code up to 41 times
-date :   2022-08-16 12-02-00 +0200
-categories : vba optimization  code tips
-tags : vba optimization code tips
-published : false
+layout: post
+title:  Four tips to optimize your VBA code up to 41 times
+description: Automation to save time is great. Optimization in order to minimize the execution time, it's better ! I'm going to prove to you that by applying my tricks, we can divide the execution time up to 41x. Yeah, even myself was pretty amazed by this insight.
+date:   2022-08-16 12-02-00 +0200
+categories: vba optimization  code tips
+tags: vba optimization code tips
+published: true
 ---
 
 Automation to save time is great. **Optimization** in order to minimize the execution time, it's better ! I'm going to prove to you that by applying [my tricks](#my-tricks), we can **divide the execution time up to 41x** 🤯.

@@ -4,7 +4,7 @@ title:  How to push local files to git with a single line code
 date:   2022-08-14 05-53-11 +0200
 categories: git github gitlab cli opensource
 tags: git github gitlab cli opensource
-published: true
+published: false
 ---
 
 Have you ever typed `git asd .` instead of `git add .` ? Ever forgotten to write the `-m` part in `git commit -m "my message"` ? Been tired of writing down the same three lines over and over ? As a daily basis dev, we generally hate repetitive tasks and [GUI solutions](https://git-scm.com/downloads/guis){:target="_blank"} : this is why I created a simple bash script to wrap it all together through a single line code.

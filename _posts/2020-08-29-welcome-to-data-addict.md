@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Welcome to Data Addict!"
+description: Testing my blog.
 date:   2020-08-01 00:00:00 +0200
 categories: data addict about
 tags: data addict about

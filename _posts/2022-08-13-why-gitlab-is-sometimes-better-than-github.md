@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  Why Gitlab is (sometimes) better than Github
+description: Have you ever heard about Gitlab and Github and never knew what the differences are ? This article is going to compare them, and explain why Gitlab is (sometimes) better than Github.
 date:   2022-08-13 00-00-00 +0200
 categories: gitlab github comparison differences
 tags: gitlab github comparison differences

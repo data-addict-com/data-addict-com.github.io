@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  How to setup gitlab pages domain and subdomain step by step
+description: Recently I've been struggling with Gitlab Pages custom domains. If you are here, you probably had the same issue, and this article will save your precious time by showing you the solution step by step !
 date:   2022-08-15 00-00-00 +0200
 categories: gitlab pages subdomain tutorial namecheap
 tags: gitlab pages subdomain tutorial namecheap

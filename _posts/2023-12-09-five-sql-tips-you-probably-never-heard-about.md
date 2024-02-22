@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  Five SQL tips you probably never heard about
+description: We will focus on few SQL tips that are **not that common**, that even myself (as a Data Analyst) found out very recently. They are actually really useful, and that is the reason why I wanted to share them here.
 date:   2023-12-09 10-46-20 +0200
 categories: sql data tricks  tips
 tags: sql data tricks  tips
@@ -12,7 +13,7 @@ published: true
 
 We will not talk about simple queries like `SELECT ... FROM ... WHERE ... GROUP BY ... ORDER BY ...`.    
 If you need some help with those previous syntaxes, you can search for [tutorials on youtube](https://www.youtube.com/results?search_query=sql+tutorial){:target="_blank"} instead.   
-We will rather focus on 10 SQL tips that are **not that common**, that even myself (as a Data Analyst) found out very recently, af.    
+We will rather focus on few SQL tips that are **not that common**, that even myself (as a Data Analyst) found out very recently.    
 They are actually really useful, and that is the reason why I wanted to share them here.
 > And to be honest, I would like to archive them so that I can go back to my own article for self-documentation).   
 

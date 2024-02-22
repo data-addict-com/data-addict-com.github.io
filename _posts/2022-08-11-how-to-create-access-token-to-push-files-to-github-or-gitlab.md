@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  How to create access token to push files to github or gitlab
+description: Since github stopped using password-based SSH authentication, it may be difficult for newbies to connect to their github account from their PC. I'm here to help you out!
 date:   2022-08-12 00:00:00 +0200
 categories: access-token github gitlab repository
 tags: access-token github gitlab repository

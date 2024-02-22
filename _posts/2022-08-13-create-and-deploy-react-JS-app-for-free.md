@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  Create and deploy React JS app for free
+description: Let me prove you why this free solution is also a great React JS app hosting platform.
 date:   2022-08-13 00-00-01 +0200
 categories: reactJS gitlab
 tags: reactJS gitlab
