@@ -1,0 +1,144 @@
+{
+  "_id": "COMPANYNAME_reviews",
+  "startUrl": [
+    "https://fr.trustpilot.com/review/COMPANYNAME?languages=all&sort=recency&page=[0-LASTPAGEINDEX]"
+  ],
+  "selectors": [
+    {
+      "id": "id_entreprise",
+      "parentSelectors": [
+        "_root"
+      ],
+      "type": "SelectorText",
+      "selector": ".title_displayName__TtDDM",
+      "multiple": false,
+      "regex": ""
+    },
+    {
+      "id": "numero_page",
+      "parentSelectors": [
+        "_root"
+      ],
+      "type": "SelectorText",
+      "selector": ".pagination-link_current___vBZ_",
+      "multiple": false,
+      "regex": ""
+    },
+    {
+      "id": "id_avis",
+      "parentSelectors": [
+        "_root"
+      ],
+      "type": "SelectorElement",
+      "selector": ".styles_cardWrapper__LcCPA",
+      "multiple": true
+    },
+    {
+      "id": "date_avis",
+      "parentSelectors": [
+        "id_avis"
+      ],
+      "type": "SelectorElementAttribute",
+      "selector": ".typography_body-m__xgxZ_ time",
+      "multiple": false,
+      "extractAttribute": "datetime"
+    },
+    {
+      "id": "redacteur",
+      "parentSelectors": [
+        "id_avis"
+      ],
+      "type": "SelectorText",
+      "selector": "span.typography_heading-xxs__QKBS8.typography_appearance-default__AAY17",
+      "multiple": false,
+      "regex": ""
+    },
+    {
+      "id": "pays_redacteur",
+      "parentSelectors": [
+        "id_avis"
+      ],
+      "type": "SelectorText",
+      "selector": ".styles_consumerExtraDetails__fxS4S div span ",
+      "multiple": false,
+      "regex": ""
+    },
+    {
+      "id": "nb_avis_redacteur",
+      "parentSelectors": [
+        "id_avis"
+      ],
+      "type": "SelectorText",
+      "selector": ".styles_consumerExtraDetails__fxS4S > span",
+      "multiple": false,
+      "regex": ""
+    },
+    {
+      "id": "lien_redacteur",
+      "parentSelectors": [
+        "id_avis"
+      ],
+      "type": "SelectorLink",
+      "selector": "a.styles_consumerDetails__ZFieb ",
+      "multiple": false
+    },
+    {
+      "id": "note_avis",
+      "parentSelectors": [
+        "id_avis"
+      ],
+      "type": "SelectorImage",
+      "selector": ".star-rating_starRating__4rrcf img",
+      "multiple": false
+    },
+    {
+      "id": "titre_avis",
+      "parentSelectors": [
+        "id_avis"
+      ],
+      "type": "SelectorText",
+      "selector": "h2.typography_heading-s__f7029.typography_appearance-default__AAY17",
+      "multiple": false,
+      "regex": ""
+    },
+    {
+      "id": "contenu_avis",
+      "parentSelectors": [
+        "id_avis"
+      ],
+      "type": "SelectorText",
+      "selector": "p.typography_body-l__KUYFJ.typography_appearance-default__AAY17",
+      "multiple": false,
+      "regex": ""
+    },
+    {
+      "id": "id_reponse",
+      "parentSelectors": [
+        "id_avis"
+      ],
+      "type": "SelectorElement",
+      "selector": ".styles_wrapper__ib2L5",
+      "multiple": true
+    },
+    {
+      "id": "contenu_reponse",
+      "parentSelectors": [
+        "id_reponse"
+      ],
+      "type": "SelectorText",
+      "selector": ".styles_content__Hl2Mi p.styles_message__shHhX",
+      "multiple": false,
+      "regex": ""
+    },
+    {
+      "id": "date_reponse",
+      "parentSelectors": [
+        "id_reponse"
+      ],
+      "type": "SelectorElementAttribute",
+      "selector": ".typography_body-m__xgxZ_ time",
+      "multiple": false,
+      "extractAttribute": "datetime"
+    }
+  ]
+}
