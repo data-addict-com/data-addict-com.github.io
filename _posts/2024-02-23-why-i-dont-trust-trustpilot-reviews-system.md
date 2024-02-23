@@ -154,13 +154,13 @@ To make the dataviz, you can duplicate my [Tableau Public dataviz](https://publi
 For 189 pages scrapped, it took about 30 minutes to gather the whole datas. It's about 4k rows that makes 1Mb excel file.
 
 ## HTML structures may change 
-If the way Trustpilot pages are ever change, I/you will have to maintain it (but it **still works in february 2024** though).
+If Trustpilot pages structures ever change, I/you will have to maintain the whole webscrapper script (but it **still works in february 2024** though).
 
 ## Unexpected scraping conditions
 - **Rate limits** : change timeout parameters
 - **IP bans** : too fast, change timeout parameters or reload your box and PC
 - **Unstable internet connections** : make sure you won't have a service interruption
-- **PC on standby** : if you leave the computer scraping on its own, make sure
+- **PC on standby** : if you leave the computer scraping on its own, make sure it doesn't go on standby mode
 
 ## Legal uses
 If you only use this script for **personal purposes**, it is totally fine. However, if you want to use those datas for commercial purposes, it might be illegal depending on your country law. If you do so, I'm not responsible of any of your acts.
