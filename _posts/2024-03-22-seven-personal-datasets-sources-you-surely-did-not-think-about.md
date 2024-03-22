@@ -14,7 +14,7 @@ published: true
 # Introduction
 We all have datas somewhere. On a social media, on the apps we use on a daily basis, or even on our phones. But did you know that you can actually retrieve them ?   
 
-If you're interesed in 
+If you're a Data newbie or just interested in your personal datas online, this article might be for you.
 
 # What is a personal data ?
 **Everything that can define you on internet is a personal data**.   
