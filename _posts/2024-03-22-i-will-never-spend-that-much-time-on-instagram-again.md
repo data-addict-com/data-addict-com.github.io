@@ -29,7 +29,7 @@ As there are **A LOT of JSON files**, I made a bash script that outputs into a n
 You can find the details of the script [in this article](/todo){:target="blank"}. For **more than 300 JSON files**, it took about 1.5 minutes to process. Note that the duration might also depend on the PC processor.
 
 Here is the final list of all of the JSON files :
-![JSON files found within the Instagram zipfile export](../assets/img/2024-03-22/json-files-from-my-Instagram-export.png)
+![JSON files found within the Instagram zipfile export](../assets/img/2024-03-22/json-files-from-my-instagram-export.png)
 
 > Quite hard to know which one contains the most of your datas, right ?   
 
