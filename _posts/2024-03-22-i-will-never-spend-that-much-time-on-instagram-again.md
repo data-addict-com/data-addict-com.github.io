@@ -2,9 +2,10 @@
 layout: post
 title: I will never spend that much time on Instagram again
 description: On March 04th 2024, I downloaded all my personal datas on Instagram. When I dived into them, I realized I have wasted more than 220 whole hours on it, which is a more than 9 whole days non-stop activity. I am here to share this experience, and give you the opportunity to check out your own app use.
-date:   2024-03-22 10-24-12 +0200
+date: 2024-03-22 10-24-12 +0200
 categories: Instagram dataviz insight personal datas
 tags: Instagram dataviz insight personal datas
+image: ../assets/img/2024-03-22/thumbnail-instagram.png
 published: true
 ---
 

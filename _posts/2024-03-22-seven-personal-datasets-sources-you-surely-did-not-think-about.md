@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 7 personal datasets sources you surely did not think about
+title: Seven (7) personal datasets sources you surely did not think about
 description: We all have datas somewhere. On a social media, on the apps we use on a daily basis, or even on our phones. But did you know that you can actually retrieve them ?
 date: 2024-03-22 00-25-01 +0200
 categories: datas personal dataviz
@@ -58,7 +58,7 @@ Similarly to youtube, you will find the same datas with few more details :
 - The kind of content you liked the most
 - Your GPS location (even if you didn't activate it...)
 
-In a next article, I will show you how **knowing my instagram activity made me stop scrolling on it**. The insights were horrifying, here is a sneak peek of a dataviz from it :   
+[In this article](/i-will-never-spend-that-much-time-on-instagram-again){:target="_blank"} , I have shown you how **knowing my instagram activity made me stop scrolling on it**. The insights were horrifying, here is a sneak peek of a dataviz from it :   
 ![Number of likes per content type since I have Instagram](../assets/img/2024-03-22/instagram-content-i-liked.png) 
 
 > Note to myself : I will never watch too much Reels (in red) as in 2023...
