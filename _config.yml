@@ -1,7 +1,7 @@
 # Site settings
 title: Data Addict # site title
 description: >- # site description
-  Let's talk about Datas, Programming and Freelancer life.
+  Let's talk about Data and more.
   This website is hold by Jady Nekena R.
 lang: en-US # default lang
 timezone: Europe/Paris # set your timezone
@@ -13,7 +13,7 @@ mode: dark # default theme "dark" | "light"
 author:
   name: Data Addict by Jady Nekena R. # author name
   bio: >- # tell to the world
-      Let's talk about Datas, Programming and Dev Freelancer life.
+          Let's talk about Data and more.
   username: jadynekena # general username
   github: jadynekena # github username
   twitter: jadyrama # twitter username

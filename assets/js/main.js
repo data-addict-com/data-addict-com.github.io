@@ -28,4 +28,45 @@
       ? area.classList.add("blurry")
       : area.classList.remove("blurry");
   });
+
+
+  //make all images clickable
+  const image_clickable =() => {
+
+    // Get all <img> elements
+    var images = document.querySelectorAll('img');
+    
+    // Loop through each image
+    images.forEach(function(image) {
+
+      // Add title to the image
+      image.title = "Click to open in a new tab"
+      
+
+      // Create a new <a> element
+      var link = document.createElement('a');
+      
+      // Set its href attribute to the image source
+      link.href = image.src;
+      
+      // Set its target attribute to "_blank" to open in a new tab
+      link.target = '_blank';
+      
+      // Append the image as a child of the <a> element
+      link.appendChild(image.cloneNode(true));
+
+
+      
+      // Replace the original <img> element with the new <a> element
+      image.parentNode.replaceChild(link, image);
+
+    })
+
+  }
+
+  window.addEventListener('DOMContentLoaded', image_clickable)
+
+  //todo : on click, copy codeblocks into clipboard
+
+
 })();
