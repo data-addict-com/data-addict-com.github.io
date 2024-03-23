@@ -5,8 +5,11 @@ description: Let me prove you why this free solution is also a great React JS ap
 date:   2022-08-13 00-00-01 +0200
 categories: reactJS gitlab
 tags: reactJS gitlab
+image: ../assets/img/2022-08-13/og-react-free.png
 published: true
 ---
+
+![React app hosted for free](../assets/img/2022-08-13/og-react-free.png)
 
 * TOC
 {:toc}

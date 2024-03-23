@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Retrieve datas from postgreSQL to Google Sheets with Heroku for free"
+title:  "Retrieve data from postgreSQL to Google Sheets with Heroku for free"
 date:   2021-08-26 00:00:00 +0200
-categories: datas postgresql google-sheets heroku python
-tags: datas postgresql google-sheets heroku python
+categories: data postgresql google-sheets heroku python
+tags: data postgresql google-sheets heroku python
 published: false
 ---
 
@@ -15,7 +15,7 @@ Connecting postgreSQL to Google Sheets might be tricky, as there is no explicit 
 As a developer, I'd rather create my own things, and share them with people who might need them for their own projects. Let's see how it goes.
 
 # Why doing this?
-The main goal is to retrieve datas from a place to another : basically for **better monitoring**. As you may know, Google Sheets is available from Desktop and mobile, and it's free to use. You will see some scripts on Google Appscripts that will empower your app easily. You can also connect your sheets to Tableau Public for some magical Data Viz, and refresh datas daily without any effort from you.
+The main goal is to retrieve data from a place to another : basically for **better monitoring**. As you may know, Google Sheets is available from Desktop and mobile, and it's free to use. You will see some scripts on Google Appscripts that will empower your app easily. You can also connect your sheets to Tableau Public for some magical Data Viz, and refresh data daily without any effort from you.
 
 # Some assumptions before we begin
 The following code is assuming that you're using the same dbname-username-password for all the databases that you want to monitor. Of course, if this assumption is not true, you should write down a new way to handle all dbnames-users-passwords, by changing the variables `DB_NAME`, `DB_USERNAME` and `DB_PASSWORD`.
@@ -48,7 +48,7 @@ In this example, I'm going to use the following details:
 Just let the magic process for 1 minute or 2.
 
 ### The table that will be fetched
-Once your database is ready, use the button on the left side bar: ![supabase-SQL](/assets/img/2021-08-26/supabase-sql.png) to run the following SQL query. It will create the table you will retrieve datas from later on.
+Once your database is ready, use the button on the left side bar: ![supabase-SQL](/assets/img/2021-08-26/supabase-sql.png) to run the following SQL query. It will create the table you will retrieve data from later on.
 {% highlight SQL %}
 CREATE TABLE public.conv
 (
@@ -75,7 +75,7 @@ COMMENT ON COLUMN public.conv.datetime
 ALTER TABLE ONLY public.conv ADD CONSTRAINT conv_pkey PRIMARY KEY (id);
 {% endhighlight %}
 
-Now, let's insert some datas in it.
+Now, let's insert some data in it.
 {% highlight TSV %}
 d5f67084-c0ca-4ae5-8957-348237ba51be	A	B	Hey! It's been a while. How you're doing?	2021-06-26 12:03:22+00
 5287170c-b6f6-47fe-ad0c-9f724ef60acb	B	A	Hey.\nThanks for your message. I'm doing fine, thanks!\nWhat's up?	2021-06-26 12:03:31+00
@@ -88,7 +88,7 @@ a3ce9c80-8333-4fc7-8d27-7c19c31326d4	A	B	Foo. The Foo Bar.	2021-06-26 12:05:45+0
 {% endhighlight %}
 
 Your supabase table must now look like this:  
-![final-supabase-datas](/assets/img/2021-08-26/final-datas.PNG)
+![final-supabase-data](/assets/img/2021-08-26/final-data.PNG)
 
 ## 3. Create your python server hosted in Github and deployed on Heroku
 ### The connection string
@@ -103,10 +103,10 @@ Now that you have this connection string, let's code!
 Directly from the [repo](https://github.com/jadynekena/python-server-heroku).
 
 #### The python server
-Our goal here is to create the controller that receives a SQL statement (such as `SELECT * FROM NAMETABLE`), and gives back the datas as JSON. It's actually a REST API controller.  
+Our goal here is to create the controller that receives a SQL statement (such as `SELECT * FROM NAMETABLE`), and gives back the data as JSON. It's actually a REST API controller.  
 **Important cautions**:
 - The following method is **not** secure. You will write down your postgreSQL database password inside your code, so be sure to host the file in a **private repo** on github.
-- If your datas are sensitive, you should consider implementing some authentication layer before accessing to your Heroku app.  
+- If your data are sensitive, you should consider implementing some authentication layer before accessing to your Heroku app.  
 
 Now create a local directory, named `python-server` for example. From now on, you will need to create **5 files**. **2 of those 5 files will be auto-generated**, you will read more about it later, just right [here](#certpem-and-keypem)
 
@@ -139,7 +139,7 @@ https://127.0.0.1:5000/<YOUR-DB-HOST>/<YOUR-SELECT-STATEMENT>
 {% endhighlight %}  
 
 In my case, I have this JSON:
-![results](/assets/img/2021-08-26/returned-datas-from-localhost-json.PNG)
+![results](/assets/img/2021-08-26/returned-data-from-localhost-json.PNG)
 
 Now, push all those files in your forked and **private** repo on github.  
 Once you're done, go to your Heroku account, we're going to create your app.
@@ -166,9 +166,9 @@ heroku ps:scale worker=1
 {% endhighlight %}  
 
 ### Test your Heroku App
-On the up right corner of your Heroku App Dashboard, click on Open app. If the Hello World statement is displayed, your app is running. Try now to go to `<YOUR-HEROKU-APP>.herokuapp.com/<YOUR-DB-HOST>/<YOUR-SELECT-STATEMENT>` and see the datas displaying as JSON object.
+On the up right corner of your Heroku App Dashboard, click on Open app. If the Hello World statement is displayed, your app is running. Try now to go to `<YOUR-HEROKU-APP>.herokuapp.com/<YOUR-DB-HOST>/<YOUR-SELECT-STATEMENT>` and see the data displaying as JSON object.
 
-## 5. Fetch datas into Google Sheets
+## 5. Fetch data into Google Sheets
 ### Create the Spreadsheet
 Go to [drive.google.com](drive.google.com) and create a new Google Sheet file. This will lead you to a new tab. Rename the file to whatever you want. Name the first sheet with the same name as your target table. In my case, I will name it `conv`. Open a new tab for the next and very last step.
 
@@ -205,7 +205,7 @@ function update_my_sheet(sheet_name){
   var sheet = ss.getSheetByName(sheet_name);
   sheet.getRange(1, 1, sheet.getMaxRows(), sheet.getMaxColumns()).clear({contentsOnly: true});
   
-  //no datas found  
+  //no data found  
   if(initial_results.length === 0) return false
 
   var results = initial_results.map(it => Object.values(it)) 
@@ -257,10 +257,10 @@ Accept all authorizations.
 Go back to your spreadsheet tab, and see the magic!
 ![the-magic](/assets/img/2021-08-26/final-results.PNG)
 
-### (Optional) Enable a trigger to retrieve datas automatically
+### (Optional) Enable a trigger to retrieve data automatically
 Instead of running the `go` function manually, you can setup a trigger.
 Go on the left-side pannel > Triggers. Then configure the parameters as follows, if you want a per-minute refresh for instance:
 ![triggers-parameters](/assets/img/2021-08-26/trigger-parameters.PNG)
  
-And that's it ! Enjoy your datas from Google Sheets directly.
+And that's it ! Enjoy your data from Google Sheets directly.
 

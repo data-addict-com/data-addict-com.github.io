@@ -3,8 +3,9 @@ layout: post
 title:  Five SQL tips you probably never heard about
 description: We will focus on few SQL tips that are **not that common**, that even myself (as a Data Analyst) found out very recently. They are actually really useful, and that is the reason why I wanted to share them here.
 date:   2023-12-09 10-46-20 +0200
-categories: sql data tricks  tips
+categories: sql data tricks tips
 tags: sql data tricks  tips
+image: ../assets/img/2023-12-09/og-sql.png
 published: true
 ---
 
@@ -38,10 +39,10 @@ NB : Datas may differ from a tip to another, but the data structure will remain 
 Just remember the syntax : **`WITH...`**.   
 Yeah, it is that simple ! 
 
-### Usecase #1 : store datas in a question without a table in [METABASE](https://www.metabase.com/){:target="_blank"}
+### Usecase #1 : store data in a question without a table in [METABASE](https://www.metabase.com/){:target="_blank"}
 > If you are not familiar to metabase, just [skip this usecase](#usecase-2--factor-to-avoid-repetition-in-your-calculated-fields).   
 
-There might be times where you need to store some datas somewhere in your database, but for some reason you don't have write-access to do so. Maybe you need to wait for a developer to manage it, or maybe you don't know how to import it manually... No matter what the reason is, there is actually a workaround for that, especially if you know exactly which structure and datas you want to store !    
+There might be times where you need to store some data somewhere in your database, but for some reason you don't have write-access to do so. Maybe you need to wait for a developer to manage it, or maybe you don't know how to import it manually... No matter what the reason is, there is actually a workaround for that, especially if you know exactly which structure and data you want to store !    
 Here is the syntax to do the CTE with [our previous datasets](#what-you-will-need-to-test-those-tips) :    
 ```
 WITH people("NAME","AGE","COUNTRY") AS (
@@ -66,7 +67,7 @@ Once you save this query as a question in metabase, you can [use it later as a s
 
 
 ### Usecase #2 : factor to avoid repetition in your calculated fields
-Let's assume that you already have a table named `people` with the [previous datas](#what-you-will-need-to-test-those-tips).   
+Let's assume that you already have a table named `people` with the [previous data](#what-you-will-need-to-test-those-tips).   
 The goal is now to calculate a field, and add a condition on this new calculed field.    
 For example, let's calculate the year of birth of every person, then keep only the records where this calculated year is an even number.   
 Without CTE, you may use this syntax:
@@ -107,7 +108,7 @@ FROM SUB_QUERY
 Here, it first executes the `SUB_QUERY`, then from it, it will retrieve the `DISTINCT COLUMN_1`.
 
 ## 2. `PARTITION BY`
-It's another way to aggregate datas instead of using `GROUP BY`. It is also known as a window function. The syntax is :
+It's another way to aggregate data instead of using `GROUP BY`. It is also known as a window function. The syntax is :
 ```
 AGGREGATE_FUNCTION(field1) OVER (PARTITION BY field2, field3, ...)
 ```
@@ -130,7 +131,7 @@ FROM TABLE_NAME
 ### Example
 
 
-For example, we want to know the average age from each continent of the following datas:
+For example, we want to know the average age from each continent of the following data:
 ```
 NAME,AGE,COUNTRY,CONTINENT
 ALICE,20,FRANCE,EUROPE
@@ -177,12 +178,12 @@ ORDER BY "CONTINENT", "COUNTRY",  "AGE"
 ```
 
 ![results-partition-by-average-age.png](../assets/img/2023-12-09/results-partition-by-average-age.png)
-See how the `average_continent_age` doesn't change no matter what the country is ? If you want to know how an aggregated field is computed, this is a very powerful way to understand how your datas are used for the calculation. 
+See how the `average_continent_age` doesn't change no matter what the country is ? If you want to know how an aggregated field is computed, this is a very powerful way to understand how your data are used for the calculation. 
 
 
 ## 3. `ROLL UP`
 You can only use `ROLL UP` with `GROUP BY` (no `PARTITION BY` possible).   
-Let's take the same [datas as in tip #2](#example).   
+Let's take the same [data as in tip #2](#example).   
 Let's assume that we want to add a new row called 'WORLDWIDE' that has the average age in all continents, in addition to the average age in each continent.
 ```
 SELECT "CONTINENT", AVG("AGE") as average_continent_age
@@ -202,18 +203,18 @@ SELECT *
 FROM PEOPLE
 ORDER BY "CONTINENT" NULLS LAST
 ```
-Anyone with a null value of `CONTINENT` will always be displayed at the end of your selected datas.
+Anyone with a null value of `CONTINENT` will always be displayed at the end of your selected data.
 
 ## 5. `COALESCE`
 This tip is probably the most known among them all. But nevermind, some people may never heard about it !   
 To replace `null` values with an actual value, you can use `COALESCE(fieldname, 'replacement_value')`.   
-For example, let's take those datas :
+For example, let's take those data :
 ![roll-up-results](../assets/img/2023-12-09/roll-up-results.png)
 
 In your SELECT statement, you can replace `SELECT "CONTINENT"` with `SELECT COALESCE("CONTINENT",'WORLDWIDE') as continent_and_worldwide`, and here are the results :
 ![coalesce-results](../assets/img/2023-12-09/coalesce-results.png)
 
-It can fill up your empty datas without having to replace the raw ones !   
+It can fill up your empty data without having to replace the raw ones !   
 
 
 

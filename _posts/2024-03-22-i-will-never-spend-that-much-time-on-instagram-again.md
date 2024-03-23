@@ -1,10 +1,10 @@
 ---
 layout: post
 title: I will never spend that much time on Instagram again
-description: On March 04th 2024, I downloaded all my personal datas on Instagram. When I dived into them, I realized I have wasted more than 220 whole hours on it, which is a more than 9 whole days non-stop activity. I am here to share this experience, and give you the opportunity to check out your own app use.
+description: On March 04th 2024, I downloaded all my personal data on Instagram. When I dived into them, I realized I have wasted more than 220 whole hours on it, which is a more than 9 whole days non-stop activity. I am here to share this experience, and give you the opportunity to check out your own app use.
 date: 2024-03-22 10-24-12 +0200
-categories: Instagram dataviz insight personal datas
-tags: Instagram dataviz insight personal datas
+categories: Instagram dataviz insight personal data
+tags: Instagram dataviz insight personal data
 image: ../assets/img/2024-03-22/thumbnail-instagram.png
 published: true
 ---
@@ -12,18 +12,18 @@ published: true
 * TOC
 {:toc}
 
-# About personal datas on Instagram
-On March 04th 2024, I downloaded all my personal datas on Instagram: a 500MB zip file. When I dived into them, I realized I have wasted **more than 220 whole hours** on it, which is a **more than 9 whole days non-stop activity**. I am here to share this experience, and give you the opportunity to check out your own app use.
+# About personal data on Instagram
+On March 04th 2024, I downloaded all my personal data on Instagram: a 500MB zip file. When I dived into them, I realized I have wasted **more than 220 whole hours** on it, which is a **more than 9 whole days non-stop activity**. I am here to share this experience, and give you the opportunity to check out your own app use.
 
 > NB : Every information about Instagram here is valid for today (March 22nd 2024), and **might change in the future**.
 
 # What kind of information does Instagram have about me (us) ?
-In this downloaded ~500MB zip file, there are my whole datas since I signed up in 2016 (second account). In fact, once unzipped there is a lot of folders that might contain JSON files (that are actually the datas I need). In some cases, there can be a single text file named `no-data.txt` in it, where it’s written :
+In this downloaded ~500MB zip file, there are my whole data since I signed up in 2016 (second account). In fact, once unzipped there is a lot of folders that might contain JSON files (that are actually the data I need). In some cases, there can be a single text file named `no-data.txt` in it, where it’s written :
 > *You have no data in this section*.
 
-For the rest of the article, I will focus on only provided datas (**at least with 1 JSON file**).   
+For the rest of the article, I will focus on only provided data (**at least with 1 JSON file**).   
 As there are **A LOT of JSON files**, I made a bash script that outputs into a new text file 2 details of every JSON file:
-- its `relative path` : I encrypted any personal datas within it (from personal messages for example)
+- its `relative path` : I encrypted any personal data within it (from personal messages for example)
 - its `size` : in bytes
 
 You can find the details of the script [in this article](/todo){:target="blank"}. For **more than 300 JSON files**, it took about 1.5 minutes to process. Note that the duration might also depend on the PC processor.
@@ -31,10 +31,10 @@ You can find the details of the script [in this article](/todo){:target="blank"}
 Here is the final list of all of the JSON files :
 ![JSON files found within the Instagram zipfile export](../assets/img/2024-03-22/json-files-from-my-instagram-export.png)
 
-> Quite hard to know which one contains the most of your datas, right ?   
+> Quite hard to know which one contains the most of your data, right ?   
 
 Here is a more readable version of the list, sorted by file size :
-![More readable version on JSON files from my Instagram datas](../assets/img/2024-03-22/readable-list-of-json-files.png)
+![More readable version on JSON files from my Instagram data](../assets/img/2024-03-22/readable-list-of-json-files.png)
 
 As you can see :
 - `liked_posts.json` is the largest one, with 5Mbytes.
@@ -49,7 +49,7 @@ For this section, I will explore the biggest JSON file I found : the `liked_post
 ## I liked more than 20 000 contents
 ![20366 likes all time](../assets/img/2024-03-22/total-number-of-likes.png)
 
-I created my (second) Instagram account on **September 26th 2016**, which means that the downloaded datas represent **2717 days of activity**. That means that **on average, I liked 7 different contents every single day since I signed up**. I don't even know how high this number would be if I bring it up with my previous account datas (created in 2012)...
+I created my (second) Instagram account on **September 26th 2016**, which means that the downloaded data represent **2717 days of activity**. That means that **on average, I liked 7 different contents every single day since I signed up**. I don't even know how high this number would be if I bring it up with my previous account data (created in 2012)...
 
 ## I spent too much time watching reels, especially in 2023
 ![All time KPIs](../assets/img/2024-03-22/all-time-kpis.png)
@@ -76,10 +76,10 @@ I spent the whole night scrolling. What a shame.
 ![Number of reels I liked per hour on december 30th 2023](../assets/img/2024-03-22/liked-reels-december-30th-2023.png)
 I'd rather not comment...
 
-# Download your own datas
+# Download your own data
 Everything is well explained in [an article of the Instagram Help Center](https://help.instagram.com/181231772500920){:target="_blank"}. Make sure to downlod the **json** version instead of the HTML one. It might take few hours or even days to have access to your export : they will send you an email with the download link when it's ready. It will always be a zipfile.
 
-# Visualize your own datas and get mad (or not) about yourself too
+# Visualize your own data and get mad (or not) about yourself too
 To make all those dataviz, I used **Tableau Public**, **which is totally free**.
 To begin with, you can:
 - Explore [my actual dataviz](https://jadynekena.com/projets-donnees-personnelles/?id=my-instagram-activity&src=84b58af7-5bd1-427b-92f5-a7b2ee9a7b6a){:target="_blank"} in order to understand how it works (for example, the 40 seconds spent on a content is a changeable parameter)

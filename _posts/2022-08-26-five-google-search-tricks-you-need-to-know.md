@@ -5,12 +5,15 @@ description: When you search for information on Google, it is sometimes complica
 date:   2022-08-26 14-51-21 +0200
 categories: google search tricks  tips
 tags: google search tricks tips
+image: ../assets/img/2022-08-26/og-google.png
 published: true
 ---
+
 
 * TOC
 {:toc}
 
+![Goal of the article is master google searches](../assets/img/2022-08-26/og-google.png)
 
 When you search for information on Google, it is sometimes complicated to verify its veracity. For example, many sites will claim with "research has proven that..." - without actually mentioning the researchers.
 

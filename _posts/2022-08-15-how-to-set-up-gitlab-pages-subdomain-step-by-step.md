@@ -5,6 +5,7 @@ description: Recently I've been struggling with Gitlab Pages custom domains. If 
 date:   2022-08-15 00-00-00 +0200
 categories: gitlab pages subdomain tutorial namecheap
 tags: gitlab pages subdomain tutorial namecheap
+image: ../assets/img/2022-08-15/og-gitlab-pages.png
 published: true
 ---
 
@@ -22,6 +23,9 @@ So what's the matter ? It seems that **[gitlab documentation is actually wrong][
 
 
 After many tests and failures by myself, I finally found out the always-working solution thanks to a [namecheap article][namecheap-article]{:target="_blank"}.
+
+
+![Goal of the article is to setup gitlab pages](../assets/img/2022-08-15/og-gitlab-pages.png)
 
 # Benefits
 Gitlab Pages is a **free** hosting solution for a **static app**, but it requires some technical skills ad the building process has to be managed by yourself. Here are few advantages :

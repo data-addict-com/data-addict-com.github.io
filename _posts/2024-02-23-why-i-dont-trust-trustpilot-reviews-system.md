@@ -3,14 +3,17 @@ layout: post
 title: Why I don't trust Trustpilot reviews system
 description: We have this whole reflex of going to see the reviews of a company on Google, which naturally redirects us to Trustpilot. However, this platform which claims to be objective is far from being so, and let me explain why with concrete examples.
 date:   2024-02-23 12-53-04 +0200
-categories: trustpilot datas company
-tags: trustpilot datas company
+categories: trustpilot data company
+tags: trustpilot data company
+image: ../assets/img/2024-02-23/og-trustpilot.png
 published: true
 ---
 
 When it comes to **make a choice** between possible options (for restaurants, hotels, ...), we kinda all have this reflex of going to see the reviews on Google. It naturally redirects us to different reviews systems such as [Google Maps](https://maps.google.com){:target="_blank"}, [Tripadvisor](https://www.tripadvisor.fr/){:target="_blank"}, or ... **[Trustpilot](trustpilot.com){:target="_blank"}**.   
 
 In this article, I will focus on **Trustpilot** and I will show you why **I don't trust this platform anymore**. It claims to be objective, but in fact, **it is far from being so**, and let me explain why. 
+
+![Truspilot is unrevelant](../assets/img/2024-02-23/og-trustpilot.png)
 
 * TOC
 {:toc}
@@ -45,8 +48,8 @@ For my **personal fun** !
 # Gathering the datasets
 If you wonder how technically I proceeded, you can jump to the [detailed section about it](#do-it-yourself).
 
-Here are the raw datas scraped :
-![Raw datas from excel][rawdatas]
+Here are the raw data scraped :
+![Raw data from excel][rawdatas]
 
 > Yeah, the column names are in french. And yeah, the `response date` is always empty, but nevermind, we can go with it !
 
@@ -61,9 +64,9 @@ To make sure everything worked fine during scraping, let's check :
 - the reviews score histogram : kind looks like the one in Trustpilot   
 
 ![Reviews summary in trustpilot][trustpilot-reviews-summary]
-![Reviews summary in scraped datas][datas-reviews-summary]
+![Reviews summary in scraped data][data-reviews-summary]
 
-Now that our datas look okay, let's analyze them deeper.   
+Now that our data look okay, let's analyze them deeper.   
 As stated before, these 3 criterias will make a review reliable :
 - There is a feedback comment in the review (at least one character)
 - The reviewer has more than one review in his/her profile
@@ -81,7 +84,7 @@ Most of the reviews (99.5% of them) are :
 - AND not from France
 
 Visually, that means that the only reviews that I was interested in are the first one among the 7 possible scenarios :
-![7 scenarios found in datas][reviews-evolution]
+![7 scenarios found in data][reviews-evolution]
 
 ### 2. From 3700+ reviews to 10 left
 If I keep my three criterias, it will only keep 10 reviews out of the 3720 collected. In fact, most of them were complaining. See **how false it is to immediately accept the 4.5/5 average score displayed on the company's Trustpilot page** ?
@@ -95,8 +98,8 @@ As you can see in previous screenshot, there are 3 picks of good reviews :
 They were probably running some commercials at the same period, so they needed to get good reviews asap to make people follow their orthodontics program. How can I be so sure ? Because most of them are the first ratings from reviewers.
 
 ## FUNFACT : Trustpilot use Lorem Ipsum to hide problematic reviews
-In my datas :   
-![Lorem ipsum review showed in datas][loremipsum2]   
+In my data :   
+![Lorem ipsum review showed in data][loremipsum2]   
 
 On the website :   
 ![Lorem ipsum review showed in Trust Pilot][loremipsum]
@@ -142,16 +145,16 @@ Now, click on `Import Sitemap`.
 
 Click on `Start scraping`, then wait for the magic to happen !
 
-## Step 5 : download the datas, and make the dataviz
+## Step 5 : download the data, and make the dataviz
 
 ![Sitemap xxx then Export data][download] 
 
 Choose the xlsx format, as it handles comas that may be present in your scraped data.   
-To make the dataviz, you can duplicate my [Tableau Public dataviz](https://public.tableau.com/app/profile/ramanandray/viz/Trustpilot_17086711974050/Reliablereviewornot){:target="_blank"} and replace the datas with your own.
+To make the dataviz, you can duplicate my [Tableau Public dataviz](https://public.tableau.com/app/profile/ramanandray/viz/Trustpilot_17086711974050/Reliablereviewornot){:target="_blank"} and replace the data with your own.
 
 # Limits
 ## The more reviews, the more it takes time
-For 189 pages scrapped, it took about 30 minutes to gather the whole datas. It's about 4k rows that makes 1Mb excel file.
+For 189 pages scrapped, it took about 30 minutes to gather the whole data. It's about 4k rows that makes 1Mb excel file.
 
 ## HTML structures may change 
 If Trustpilot pages structures ever change, I/you will have to maintain the whole webscrapper script (but it **still works in february 2024** though).
@@ -163,7 +166,7 @@ If Trustpilot pages structures ever change, I/you will have to maintain the whol
 - **PC on standby** : if you leave the computer scraping on its own, make sure it doesn't go on standby mode
 
 ## Legal uses
-If you only use this script for **personal purposes**, it is totally fine. However, if you want to use those datas for commercial purposes, it might be illegal depending on your country law. If you do so, I'm not responsible of any of your acts.
+If you only use this script for **personal purposes**, it is totally fine. However, if you want to use those data for commercial purposes, it might be illegal depending on your country law. If you do so, I'm not responsible of any of your acts.
 
 # How to trust back the platform ?
 Actually, the Trustpilot concept is good : help people to make a decision based on what other people said. The thing is, fake testimonies should be prohibited or at least limited.
@@ -182,7 +185,7 @@ I hope this article convinced you to be more aware of reviews sources !
 [import-result]: ../assets/img/2024-02-23/import-result.png
 [rawdatas]: ../assets/img/2024-02-23/rawdatas.png
 [trustpilot-reviews-summary]: ../assets/img/2024-02-23/trustpilot-reviews-summary.png
-[datas-reviews-summary]: ../assets/img/2024-02-23/datas-reviews-summary.png
+[data-reviews-summary]: ../assets/img/2024-02-23/data-reviews-summary.png
 [loremipsum]: ../assets/img/2024-02-23/loremipsum.png
 [loremipsum2]: ../assets/img/2024-02-23/loremipsum2.png
 [run1]: ../assets/img/2024-02-23/run1.png

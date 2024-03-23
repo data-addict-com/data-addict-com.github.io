@@ -5,8 +5,11 @@ description: Automation to save time is great. Optimization in order to minimize
 date:   2022-08-16 12-02-00 +0200
 categories: vba optimization  code tips
 tags: vba optimization code tips
+image: ../assets/img/2022-08-16/og-vba.png
 published: true
 ---
+
+![Article thumbnail](../assets/img/2022-08-16/og-vba.png)
 
 Automation to save time is great. **Optimization** in order to minimize the execution time, it's better ! I'm going to prove to you that by applying [my tricks](#my-tricks), we can **divide the execution time up to 41x** 🤯.
 > Even myself was pretty amazed by this insight.

@@ -5,6 +5,7 @@ description: Have you ever heard about Gitlab and Github and never knew what the
 date:   2022-08-13 00-00-00 +0200
 categories: gitlab github comparison differences
 tags: gitlab github comparison differences
+image: ../assets/img/2022-08-13/gitlab-vs-github.png
 published: true
 ---
 

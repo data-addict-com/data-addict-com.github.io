@@ -5,11 +5,14 @@ description: Since github stopped using password-based SSH authentication, it ma
 date:   2022-08-12 00:00:00 +0200
 categories: access-token github gitlab repository
 tags: access-token github gitlab repository
+image: ../assets/img/2022-08-11/og-ssh.png
 published: true
 ---
 
 * TOC
 {:toc}
+
+![Article thumbnail](../assets/img/2022-08-11/og-ssh.png)
 
 # What is an access token ?
 According to wikipedia :

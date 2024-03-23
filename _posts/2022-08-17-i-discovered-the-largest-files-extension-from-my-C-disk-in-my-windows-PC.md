@@ -5,6 +5,7 @@ description: Have you ever wondered what are the largest files in your local dis
 date:   2022-08-17 08-14-02 +0200
 categories: tableau dataviz vizualisation disk windows os 
 tags: tableau dataviz vizualisation disk windows os 
+image: ../assets/img/2022-08-17/summary.png
 published: true
 ---
 
@@ -98,7 +99,7 @@ This article will show you step by step how I did it. But before we're diving in
 
 # How did I do it
 ## Gathering files details
-Before having the above final vizualisation, the first step is obviously to gather datas. I just used the following two lines code from my **cmd terminal** :
+Before having the above final vizualisation, the first step is obviously to gather data. I just used the following two lines code from my **cmd terminal** :
 {% highlight cmd %}
 cd C:/
 where "*.*" /r . /t > f:\list-of-c-files.txt 
@@ -108,16 +109,16 @@ where "*.*" /r . /t > f:\list-of-c-files.txt
 
 ### Initial output
 The output will look like shown below :
-[   ![First raw datas outputed from script][initial-output]   ][initial-output]{:target="_blank"}
+[   ![First raw data outputed from script][initial-output]   ][initial-output]{:target="_blank"}
 Quite ugly, right ? Let's do some cleaning.
 
 ### Data cleaning
 This step can be done in any software or programming language that you like. In my case, I directly used **Tableau Software**.   
 
-- I **import the initial file** as a text file with a **random non-used character as delimiter**. From this way, I can customize all new calculated fields from raw datas manually. In my case, I used `^` as the seen in this (french version) screenshot from **Tableau Software Desktop** : ![delimiter][delimiter]
+- I **import the initial file** as a text file with a **random non-used character as delimiter**. From this way, I can customize all new calculated fields from raw data manually. In my case, I used `^` as the seen in this (french version) screenshot from **Tableau Software Desktop** : ![delimiter][delimiter]
 - I create all the **new calculated fields** and **hide** the single raw column `src_all` :   
 [![calculated-fields][calculated-fields]][calculated-fields]{:target="_blank"}
-- I **preview final output datas** to make sure everything fits to what I expected :
+- I **preview final output data** to make sure everything fits to what I expected :
 [![final-output][final-output]][final-output]{:target="_blank"}
 
 
@@ -141,5 +142,5 @@ Feel free to **tell me what are your thoughts** on this side-project of mine on 
 [calculated-fields]: ../assets/img/2022-08-17/calculated-fields.png
 [final-output]: ../assets/img/2022-08-17/final-output.png
 
-[initial-output]: ../assets/img/2022-08-17/first-raw-datas.png
+[initial-output]: ../assets/img/2022-08-17/first-raw-data.png
 
