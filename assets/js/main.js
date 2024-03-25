@@ -64,9 +64,65 @@
 
   }
 
-  window.addEventListener('DOMContentLoaded', image_clickable)
-
   //todo : on click, copy codeblocks into clipboard
+  const make_code_blocks_copy = () => {
+    Array.from(document.querySelectorAll('pre')).map(e => {
+      e.title = "Click to copy the whole code bock"
+      e.style.cursor = 'pointer'
+      create_click_event(e)
+    })
+  }
+
+  const create_click_event = (e) => {
+     e.addEventListener('click', (event) => {
+      event.stopPropagation()
+
+      let current_node = event.target
+      const content_copied = copy(current_node)
+      
+      //if target = code => go to parent Node
+      if (event.target.nodeName === 'CODE') current_node = event.target.parentNode
+
+      current_node.insertBefore(copied_alert().firstChild, current_node.firstChild)
+
+      setTimeout(function(){
+          document.getElementById('copied_alert').remove()
+      },1750)
+    })
+  }
+
+  const copied_alert = () => {
+    const html_alert = `<strong id="copied_alert" style="top: -35px;position: relative;color: black;margin: 0 auto;text-align: center;display: block;">Copied to clipboard!</strong>`
+    const new_element = document.createElement('span')
+    new_element.innerHTML = html_alert
+    new_element.id = 'copied_alert'
+    return new_element
+  }
+
+  const copy = (target) => {
+    const TextToCopy = target.textContent
+
+    var TempText = document.createElement("textarea");
+    TempText.value = TextToCopy;
+    document.body.appendChild(TempText);
+    TempText.select();
+    
+    document.execCommand("copy");
+    document.body.removeChild(TempText);
+
+    return TextToCopy
+  }
+
+  const custom_alert = (content) => {
+    return console.log(content)
+  }
+
+  const function_on_loading_done = () => {
+    image_clickable()
+    make_code_blocks_copy()
+  }
+
+  window.addEventListener('DOMContentLoaded', function_on_loading_done)
 
 
 })();
