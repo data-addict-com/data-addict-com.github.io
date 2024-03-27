@@ -45,7 +45,7 @@ That list is not exhaustive, but as you may understand : **the more data you agr
 You can retrieve everything about your channel activity, with timestamps on them :
 - The uploaded videos : if you are a very active youtuber, it can be a very heavy export 
 - The comments you made
-- The videos likes you
+- The videos you liked
 - The playlists you created
 - The channels you muted
 

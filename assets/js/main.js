@@ -67,7 +67,7 @@
   //todo : on click, copy codeblocks into clipboard
   const make_code_blocks_copy = () => {
     Array.from(document.querySelectorAll('pre')).map(e => {
-      e.title = "Click to copy the whole code bock"
+      e.title = "Click to copy the whole code block"
       e.style.cursor = 'pointer'
       create_click_event(e)
     })
